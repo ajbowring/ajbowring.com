@@ -1,0 +1,29 @@
+:root {
+  padding: 0;
+  margin: 0;
+
+  font-family: sans-serif;
+  font-size: 16px;
+
+  --col-bg: #222328;
+  --col-fg: #ffffff;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --col-bg: #f1eaff;
+    --col-fg: #000000;
+  }
+}
+
+body {
+  background-color: var(--col-bg);
+  color: var(--col-fg);
+  text-align: center;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
